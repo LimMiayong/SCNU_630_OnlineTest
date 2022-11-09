@@ -1,0 +1,16 @@
+【about Access】
+【firewall:
+close it then host could access 
+undo virtual machine's firewall:
+	systemctl stop firewalld.service
+enable it:
+	systemctl start firewalld.service
+【run server:
+into the directory where manage.py in
+command run the web:
+	python3 manage.py runserver  ip:port(default8000)
+	such as 10.255.25.73:8000
+	0.0.0.0
+&: change urls.py_path  & settings.py_allowed_host
+&: change virtualMachine's net setting: NAT -> Bridged Adapter
+ip use inet-ip like 10.255.25.73 then the machine in same LAN could access the web.
